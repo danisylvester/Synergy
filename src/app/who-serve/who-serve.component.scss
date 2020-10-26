@@ -1,0 +1,56 @@
+.who-serve-home {
+    background-color: #eee;
+    padding: 2rem 1rem;
+  }
+  .who-serve-text {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .who-paragraph {
+    margin-top: 1.5rem;
+  }
+  .who-serve-img {
+    display: none;
+  }
+  
+  @media (min-width: 420px) {
+    .who-serve-img {
+      display: block;
+    }
+  }
+  
+  /*Who We Serve Medium*/
+  @media (min-width: 600px) {
+    .who-serve-home {
+      padding: 10% 4rem;
+    }
+    .who-serve-text {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .who-paragraph {
+      margin: 2rem 0rem;
+    }
+  }
+  /*Who We Serve Large*/
+  @media (min-width: 992px) {
+    .who-serve-home {
+      padding: 5rem;
+    }
+    .who-serve-text {
+      text-align: left;
+    }
+    .who-serve-img {
+      margin-top: 3rem;
+    }
+    #who-img-size {
+      width: 85%;
+      display: block;
+    }
+  }
+
+ @media (min-width: 1700px){
+   .who-serve-home{
+     padding: 5rem 10%;
+   }
+ }

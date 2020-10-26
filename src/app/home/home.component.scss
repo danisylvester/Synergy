@@ -1,0 +1,60 @@
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .home-wrap {
+    position: absolute;
+    background-image: url("/../assets/images/hands-in-bkg.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .home-inner {
+    background-color: #0f2f4e;
+    opacity: 0.95;
+    color: white;
+    height: auto;
+    width: 100%;
+    transform: translate(0, 40vh);
+    padding: 5%;
+  }
+  .opt-text {
+    display: none;
+  }
+  .home-inner {
+    text-align: center;
+  }
+  .home-inner a {
+    max-width: 200px;
+  }
+  
+/*Landing Medium Screens*/
+@media (min-width: 475px) {
+    .home-inner {
+      text-align: center;
+    }
+    .opt-text {
+      display: block !important;
+    }
+    .home-inner a {
+      max-width: 500px;
+    }
+  }
+  /*Landing Large Screens*/
+  @media (min-width: 992px) {
+    .home-inner {
+      text-align: left;
+      padding: 5% 2% 5% 5%;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .home-inner{
+      display: inline-block;
+    }
+  }

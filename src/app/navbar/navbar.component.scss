@@ -1,0 +1,62 @@
+.navbar {
+    background-color: transparent;
+    transition: background-color 500ms linear;
+  }
+  .navbar.scrolled {
+    background-color: #0f2f4e !important;
+    opacity: 0.9;
+    transition: background-color 500ms linear;
+  }
+  .nav-right {
+    margin: 0 0 0 auto;
+  }
+  .nav-link {
+    color: #eee;
+  }
+  .nav-item a {
+    color: #eee;
+  }
+  .dropdown-menu {
+    background-color: #0f2f4e;
+  }
+  .dropdown-menu a {
+    color: #eee;
+  }
+  .collapsing {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.35s ease;
+  }
+  .mobile-service {
+    display: none;
+  }
+  .mobile-serve {
+    display: none;
+  }
+  
+  /*Nav mobile animations*/
+  @media (max-width: 767px) {
+    .navbar {
+      background-color: #0f2f4e;
+      max-height: 10%;
+      padding-right: 0%;
+    }
+    .nav {
+      height: 95vh;
+      width: 75%;
+      padding-left: 1rem;
+      background-color: #0f2f4e;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.5s ease-in;
+      font-size: large;
+    }
+    .navbar-toggler {
+      margin-right: 1rem;
+    }
+    .nav-item {
+      margin-top: 1rem;
+    }
+  }
+  

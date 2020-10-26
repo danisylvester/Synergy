@@ -1,0 +1,87 @@
+  .monthly-services {
+    background-color: #eee;
+    padding: 2rem 0.75rem;;
+  }
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 70%;
+    border-radius: 50%;
+  }
+  .card li {
+    list-style: none;
+  }
+  .card-body ul {
+    padding-inline-start: none;
+  }
+  
+  @media (min-width: 425px) {
+    .card-img-top {
+      width: 50%;
+    }
+  }
+
+/*Medium-ish Services Home*/
+@media (min-width: 600px) {
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .card-img-top {
+        width: 200px;
+    }
+}
+  
+  /*Tablet view for Service Blocks*/
+  @media (min-width: 768px) {
+    .monthly-services {
+      padding: 10% 6rem;
+    }
+    .monthly-card-body {
+      padding: 2rem 3rem;
+    }
+  }
+  
+  /*Labtop view for Service Blocks*/
+  @media (min-width: 1024px) {
+    .monthly-services {
+      padding: 7rem;
+    }
+    .monthly-card {
+      padding: 1rem;
+    }
+    .monthly-card-body {
+      padding: 2rem;
+    }
+    .card{
+        height: 100%;
+    }
+    .card-img-top {
+        height: 200px;
+      }
+  }
+  
+  
+  /*Large Laptop*/
+  @media (min-width: 1440px) {
+    .monthly-services {
+      padding: 4rem 12%;
+    }
+    .monthly-card-body {
+      padding: 2rem 3rem;
+    }
+  }
+  
+  /*Larget Laptop*/
+  @media (min-width: 1800px) {
+    .monthly-services {
+      padding: 4rem 20%;
+    }
+  }
+  

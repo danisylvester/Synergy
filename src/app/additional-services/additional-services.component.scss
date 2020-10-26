@@ -1,0 +1,65 @@
+.single-services {
+  padding: 2rem 0.75rem;
+}
+.single-services ul {
+  padding-left: 1.5rem;
+}
+.service-text {
+  margin-top: 1rem;
+}
+.service-text p {
+  margin-top: 1.5rem;
+}
+.service-heading {
+  margin-top: 1rem;
+}
+
+.listing p {
+  margin: 0;
+}
+
+/*Tablet view for Service Blocks*/
+@media (min-width: 768px) {
+  .listing {
+    float: left;
+    padding-left: 30%;
+  }
+  .single-services {
+    padding: 10% 4rem;
+  }
+
+  #stepping-img {
+    width: 80%;
+  }
+}
+
+/*Labtop view for Service Blocks*/
+@media (min-width: 1024px) {
+  .single-services {
+    padding: 3rem 5rem;
+  }
+  #stepping-img {
+    width: 100%;
+    margin-top: 2.25rem;
+  }
+  .service-text {
+    font-size: 1rem;
+  }
+  #stepping-img {
+    max-width: 620px;
+  }
+}
+
+/*Large Laptop*/
+@media (min-width: 1440px) {
+  .single-services {
+    padding: 3rem 12%;
+  }
+}
+
+/*Larget Laptop*/
+@media (min-width: 1800px) {
+  .single-services {
+    padding: 4rem 15%;
+  }
+}

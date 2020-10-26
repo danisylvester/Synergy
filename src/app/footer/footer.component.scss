@@ -1,0 +1,46 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f2f4e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  .footer-item {
+    margin-top: 1rem;
+  }
+  .footer-item a {
+    color: white;
+  }
+  .circle-logo {
+    font-family: "Sansita Swashed", cursive;
+    border-style: solid;
+    border-color: #eee;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 30px;
+    margin: 1rem;
+  }
+  #footer-copyright {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  /*Footer Medium*/
+  @media (min-width: 768px) {
+    .footer-item {
+      text-align: left;
+      margin: 0%;
+    }
+    .logo-wrapper {
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+  
+    #footer-copyright {
+      text-align: right;
+    }
+  }
+  
+  /*End Footer*/

@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+
+html {
+    scroll-behavior: smooth;
+  }
+  body,
+  html {
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    font-size: large;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cursive-font {
+    font-family: "Sansita Swashed", cursive;
+  }
+
+  /* Boostrap override to get rid of right nav spacing */
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+} /*End bootstrap override*/
+
+
+  /*4K Start*/
+@media (min-width: 2500) {
+  body,
+  html {
+    font-size: 20vh;
+  }
+}
+/*4K End*/
