@@ -1,1 +1,92 @@
+-
+<div class="container bkgWrapper">
+  <div class="text-center">
+    <h1>CONTACT US</h1>
+    <h5><em>Let us help you gain the financial clarity you need!</em></h5>
+    <br />
+  </div>
+  <!--End Landing Page Section-->
 
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <table>
+      <tr>
+        <td>
+          <mat-form-field class="myFormInput">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" />
+            <mat-error *ngIf="firstName.invalid && firstName.touched">
+              * Required
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="myFormInput">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" />
+            <mat-error *ngIf="lastName.invalid && lastName.touched">
+              * Required
+            </mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="myFormInput">
+            <mat-label>Company Name</mat-label>
+            <input matInput formControlName="companyName" />
+            <mat-hint>Optional</mat-hint>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="myFormInput">
+            <mat-label>Email Address</mat-label>
+            <input matInput formControlName="email" />
+            <mat-error *ngIf="email.invalid && email.touched">
+              Your email does not look right.
+            </mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="myFormInput">
+            <mat-label>Phone Number</mat-label>
+            <input
+              matInput
+              type="text"
+              appPhoneMask
+              formControlName="phoneNumber"
+            />
+            <mat-error> * Required </mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <section formGroupName="coreServices">
+      <mat-label>Which of our core services are you interested in?</mat-label
+      ><br />
+      <mat-checkbox formControlName="setup" class="checkInput"
+        >QuickBooks Online Setup</mat-checkbox
+      ><br />
+      <mat-checkbox formControlName="cleanup" class="checkInput"
+        >QuickBooks Online Cleanup</mat-checkbox
+      ><br />
+      <mat-checkbox formControlName="asNeeded" class="checkInput"
+        >As Needed Monthly Bookkeeping</mat-checkbox
+      ><br />
+      <mat-checkbox formControlName="fullService" class="checkInput"
+        >Full Service Monthly Bookkeeping</mat-checkbox
+      ><br />
+    </section>
+
+    <mat-form-field appearance="fill" id="textBox">
+      <mat-label>Optional Message</mat-label>
+      <textarea matInput formControlName="message"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button [disabled]="contactForm.invalid" color="primary">
+      Submit
+    </button>
+  </form>
+</div>

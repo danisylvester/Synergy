@@ -29,7 +29,8 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/theme.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -97,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "srs/theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -128,6 +130,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Synergy"
 }
