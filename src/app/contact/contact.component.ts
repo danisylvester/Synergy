@@ -39,7 +39,6 @@ export class ContactComponent implements OnInit {
 
     this.contactForm.valueChanges.subscribe(console.log);
   }
-  
   get firstName(): any{
     return this.contactForm.get('firstName');
   }

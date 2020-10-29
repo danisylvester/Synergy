@@ -1,6 +1,9 @@
+import { trigger } from '@angular/animations';
 import { variable } from '@angular/compiler/src/output/output_ast';
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import * as $ from 'jquery';
 
+// declare var $:any;
 
 @Component({
   selector: 'app-navbar',
@@ -10,10 +13,10 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-  navToChange = true;
-
   ngOnInit(): void {
+    $(document).on('scroll', function(): void {
+      const nav = $('.navbar');
+      nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+      });
   }
-
-
 }
