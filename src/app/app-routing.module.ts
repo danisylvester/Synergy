@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {HomeComponent} from './home/home.component';
-import {ServicesComponent} from './services/services.component';
+import { ServicesComponent } from './services/services.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [

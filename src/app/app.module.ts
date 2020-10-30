@@ -24,6 +24,7 @@ import { MonthlyServicesComponent } from './monthly-services/monthly-services.co
 import { AdditionalServicesComponent } from './additional-services/additional-services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhoneMaskDirective } from './phone-mask.directive';
+import { NavColoredComponent } from './nav-colored/nav-colored.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PhoneMaskDirective } from './phone-mask.directive';
     SingleServicesComponent,
     MonthlyServicesComponent,
     AdditionalServicesComponent,
-    PhoneMaskDirective
+    PhoneMaskDirective,
+    NavColoredComponent,
   ],
   imports: [
     BrowserModule,

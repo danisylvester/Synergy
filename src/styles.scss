@@ -26,11 +26,11 @@ html {
 } /*End bootstrap override*/
 
 
-  /*4K Start*/
-@media (min-width: 2500) {
+/*4K Start*/
+@media (min-width: 1200) {
   body,
-  html {
-    font-size: 20vh;
+  body {
+    font-size: xx-large;
   }
 }
 /*4K End*/

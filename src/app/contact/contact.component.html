@@ -1,6 +1,6 @@
--
+<app-nav-colored></app-nav-colored>
 <div class="container bkgWrapper">
-  <div class="text-center">
+  <div class="contactHeading">
     <h1>CONTACT US</h1>
     <h5><em>Let us help you gain the financial clarity you need!</em></h5>
     <br />
@@ -34,7 +34,6 @@
           <mat-form-field class="myFormInput">
             <mat-label>Company Name</mat-label>
             <input matInput formControlName="companyName" />
-            <mat-hint>Optional</mat-hint>
           </mat-form-field>
         </td>
       </tr>
@@ -63,7 +62,7 @@
       </tr>
     </table>
 
-    <section formGroupName="coreServices">
+    <section formGroupName="coreServices" class="checkBoxSection">
       <mat-label>Which of our core services are you interested in?</mat-label
       ><br />
       <mat-checkbox formControlName="setup" class="checkInput"
@@ -84,9 +83,10 @@
       <mat-label>Optional Message</mat-label>
       <textarea matInput formControlName="message"></textarea>
     </mat-form-field>
-
-    <button mat-raised-button [disabled]="contactForm.invalid" color="primary">
-      Submit
-    </button>
+    <div class="text-center">
+      <button class="btn btn-primary">
+        Submit
+      </button>
+    </div>
   </form>
 </div>

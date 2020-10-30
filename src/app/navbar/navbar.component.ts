@@ -1,6 +1,7 @@
 import { trigger } from '@angular/animations';
 import { variable } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import * as $ from 'jquery';
 
 // declare var $:any;
