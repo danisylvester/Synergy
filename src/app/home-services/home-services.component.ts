@@ -6,7 +6,8 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-home-services',
   templateUrl: './home-services.component.html',
-  styleUrls: ['./home-services.component.scss']
+  styleUrls: ['./home-services.component.scss'],
+
 })
 export class HomeServicesComponent implements OnInit {
 
