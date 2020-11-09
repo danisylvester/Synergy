@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -8,9 +8,8 @@ import { RouterLink } from '@angular/router';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

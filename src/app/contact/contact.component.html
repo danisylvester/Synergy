@@ -56,7 +56,9 @@
               appPhoneMask
               formControlName="phoneNumber"
             />
-            <mat-error> * Required </mat-error>
+            <mat-error *ngIf="phoneNumber.invalid && phoneNumber.touched">
+              * Required
+            </mat-error>
           </mat-form-field>
         </td>
       </tr>

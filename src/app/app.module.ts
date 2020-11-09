@@ -25,6 +25,7 @@ import { AdditionalServicesComponent } from './additional-services/additional-se
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhoneMaskDirective } from './phone-mask.directive';
 import { NavColoredComponent } from './nav-colored/nav-colored.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { NavColoredComponent } from './nav-colored/nav-colored.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatInputModule,
