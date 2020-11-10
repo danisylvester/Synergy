@@ -27,31 +27,32 @@ export class ServicesComponent implements OnInit {
       });
     }
 
-    if (learnMoreSelection === 'setup'){
-      setTimeout(() => {
-        scrollToOffset('setup');
-      }, 500);
-    }
-    else if (learnMoreSelection === 'cleanup'){
-      setTimeout(() => {
-        scrollToOffset('cleanup');
-      }, 500);
-    }
-    else if (learnMoreSelection === 'monthly'){
-      setTimeout(() => {
-        scrollToOffset('monthly');
-      }, 500);
-    }
-    else if (learnMoreSelection === 'additional'){
-      setTimeout(() => {
-        scrollToOffset('additional');
-      }, 500);
-    }
-    else {
-      window.scrollTo(0, 0);
+    switch (learnMoreSelection){
+      case 'setup':
+        setTimeout(() => {
+          scrollToOffset('setup');
+        }, 500);
+        break;
+      case 'cleanup':
+        setTimeout(() => {
+          scrollToOffset('cleanup');
+        }, 500);
+        break;
+      case 'monthly':
+        setTimeout(() => {
+          scrollToOffset('monthly');
+        }, 500);
+        break;
+      case 'additional':
+        setTimeout(() => {
+          scrollToOffset('additional');
+        }, 500);
+        break;
+      default:
+        window.scrollTo(0, 0);
+        break;
     }
 
   }
-
 
 }
