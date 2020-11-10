@@ -10,7 +10,9 @@ import { FormBuilder, FormControl, FormGroup, Validators, NgControl, FormArray, 
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {
+    window.scrollTo(0, 0);
+   }
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({

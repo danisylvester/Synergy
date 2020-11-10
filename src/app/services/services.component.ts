@@ -14,28 +14,37 @@ export class ServicesComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit(): void {
     const learnMoreSelection = history.state.subRoute;
+
+    function scrollToOffset(elID: string): void{
+      const el = document.getElementById(elID);
+      const elOffset = 60;
+      const elPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elPosition - elOffset;
+
+      window.scrollBy({
+           top: offsetPosition,
+           behavior: 'smooth'
+      });
+    }
+
     if (learnMoreSelection === 'setup'){
       setTimeout(() => {
-        console.log('setup');
-        document.getElementById('setup').scrollIntoView();
+        scrollToOffset('setup');
       }, 500);
     }
     else if (learnMoreSelection === 'cleanup'){
       setTimeout(() => {
-        console.log('cleanup');
-        document.getElementById('cleanup').scrollIntoView();
+        scrollToOffset('cleanup');
       }, 500);
     }
     else if (learnMoreSelection === 'monthly'){
       setTimeout(() => {
-        console.log('monthly');
-        document.getElementById('monthly').scrollIntoView();
+        scrollToOffset('monthly');
       }, 500);
     }
     else if (learnMoreSelection === 'additional'){
       setTimeout(() => {
-        console.log('additional');
-        document.getElementById('additional').scrollIntoView();
+        scrollToOffset('additional');
       }, 500);
     }
     else {
