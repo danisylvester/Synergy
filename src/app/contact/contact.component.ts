@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, NgControl, FormArray, FormControlName } from '@angular/forms';
-
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -10,11 +9,37 @@ import { FormBuilder, FormControl, FormGroup, Validators, NgControl, FormArray, 
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private route: ActivatedRoute,
+              private router: Router) {
     window.scrollTo(0, 0);
    }
 
   ngOnInit(): void {
+    const requestQuoteFor = history.state.subRoute;
+    console.log(requestQuoteFor);
+    let setUpSelected = false;
+    let cleanUpSelected = false;
+    let asNeededSelected = false;
+    let fullServiceSelected = false;
+
+    switch (requestQuoteFor){
+      case 'setup':
+        setUpSelected = true;
+        break;
+      case 'cleanup':
+        cleanUpSelected = true;
+        break;
+      case 'asNeeded':
+        asNeededSelected = true;
+        break;
+      case 'fullService':
+        fullServiceSelected = true;
+        break;
+      default:
+        break;
+    }
+
     this.contactForm = this.fb.group({
       firstName: [null,
       Validators.required
@@ -31,15 +56,14 @@ export class ContactComponent implements OnInit {
         Validators.required
       ]],
       coreServices: this.fb.group({
-        setup: false,
-        cleanup: false,
-        asNeeded: false,
-        fullService: false
+        setup: setUpSelected,
+        cleanup: cleanUpSelected,
+        asNeeded: asNeededSelected,
+        fullService: fullServiceSelected
       }),
       message: null
     });
 
-    this.contactForm.valueChanges.subscribe(console.log);
   }
   get firstName(): any{
     return this.contactForm.get('firstName');

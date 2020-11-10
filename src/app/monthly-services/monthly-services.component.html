@@ -23,7 +23,11 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <a routerLink="/contact" class="btn btn-info">Request a Quote</a>
+                    <a
+                    [routerLink]="'/contact'"
+                    [state]="{ subRoute: 'asNeeded' }" 
+                    class="btn btn-info"
+                    >Request a Quote</a>
                 </div>
               </div>
             </div>
@@ -59,7 +63,11 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <a routerLink="/contact" class="btn btn-info">Request a Quote</a>
+                    <a
+                    [routerLink]="'/contact'"
+                    [state]="{ subRoute: 'fullService' }" 
+                    class="btn btn-info"
+                    >Request a Quote</a>
                 </div>
               </div>
             </div>
