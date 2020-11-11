@@ -91,7 +91,19 @@
       </mat-form-field>
     </div>
     <div class="text-center">
-      <button class="btn btn-primary">Submit</button>
+      <button (click)="popUpConfirmation()" class="btn btn-primary">Submit</button>
     </div>
   </form>
+
+  <!-- The Modal -->
+<div id="myModal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span (click)="closeModalBtn()" class="close">&times;</span>
+    <h5 id="modalHeader" class="cursive-font">Your message has been sent!</h5>
+    <p id="modalText">Thank you contacting us. Sunita will be in contact with you soon.</p>
+  </div>
+</div>
+
 </div>

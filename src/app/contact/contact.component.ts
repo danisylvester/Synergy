@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, NgControl, FormArray, FormControlName } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -83,7 +83,22 @@ export class ContactComponent implements OnInit {
   onSubmit(): void{
     console.warn(this.contactForm);
   }
+  popUpConfirmation(): void{
+    const contactModal = document.getElementById('myModal');
+    contactModal.style.display = 'block';
+  }
 
+  closeModalBtn(): void{
+    const contactModal = document.getElementById('myModal');
+    contactModal.style.display = 'none';
+  }
 
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const modal = document.getElementById('myModal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
 
 }
