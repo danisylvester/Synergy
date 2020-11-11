@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
     window.scrollTo(0, 0);
    }
 
+  public submitted = false;
   ngOnInit(): void {
     const requestQuoteFor = history.state.subRoute;
     console.log(requestQuoteFor);
@@ -80,25 +81,28 @@ export class ContactComponent implements OnInit {
   get message(): any{
     return this.contactForm.get('message');
   }
-  onSubmit(): void{
-    console.warn(this.contactForm);
-  }
   popUpConfirmation(): void{
     const contactModal = document.getElementById('myModal');
     contactModal.style.display = 'block';
   }
-
   closeModalBtn(): void{
     const contactModal = document.getElementById('myModal');
     contactModal.style.display = 'none';
+    this.submitted = true;
   }
-
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent): void {
     const modal = document.getElementById('myModal');
     if (event.target === modal) {
       modal.style.display = 'none';
+      this.submitted = true;
     }
+  }
+  sendAnotherMsg(): void{
+    this.submitted = false;
+  }
+  onSubmit(): void{
+    console.warn(this.contactForm);
   }
 
 }

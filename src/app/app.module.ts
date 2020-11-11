@@ -42,7 +42,7 @@ import { RouterModule } from '@angular/router';
     MonthlyServicesComponent,
     AdditionalServicesComponent,
     PhoneMaskDirective,
-    NavColoredComponent,
+    NavColoredComponent
   ],
   imports: [
     BrowserModule,

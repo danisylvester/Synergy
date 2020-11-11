@@ -1,12 +1,12 @@
 <app-nav-colored></app-nav-colored>
 <div class="container bkgWrapper">
-  <div class="contactHeading">
+  <div *ngIf="!submitted" class="contactHeading">
     <h1>CONTACT US</h1>
     <h5><em>Let us help you gain the financial clarity you need!</em></h5>
     <br />
   </div>
   <!--End Landing Page Section-->
-
+<div *ngIf="!submitted">
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="container-fluid">
       <div class="row">
@@ -105,5 +105,11 @@
     <p id="modalText">Thank you contacting us. Sunita will be in contact with you soon.</p>
   </div>
 </div>
+</div>
+<div *ngIf="submitted" class="submittedPage">
+  <h3 class="cursive-font">We'll be in contact shortly!</h3>
+  <button (click)="sendAnotherMsg()" class="btn btn-info">Send another message</button>
+</div>
 
 </div>
+
