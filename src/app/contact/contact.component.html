@@ -8,9 +8,9 @@
   <!--End Landing Page Section-->
 
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <table>
-      <tr>
-        <td>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
           <mat-form-field class="myFormInput">
             <mat-label>First Name</mat-label>
             <input matInput formControlName="firstName" />
@@ -18,8 +18,8 @@
               * Required
             </mat-error>
           </mat-form-field>
-        </td>
-        <td>
+        </div>
+        <div class="col-md-6">
           <mat-form-field class="myFormInput">
             <mat-label>Last Name</mat-label>
             <input matInput formControlName="lastName" />
@@ -27,18 +27,18 @@
               * Required
             </mat-error>
           </mat-form-field>
-        </td>
-      </tr>
-      <tr>
-        <td>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
           <mat-form-field class="myFormInput">
             <mat-label>Company Name</mat-label>
             <input matInput formControlName="companyName" />
           </mat-form-field>
-        </td>
-      </tr>
-      <tr>
-        <td>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
           <mat-form-field class="myFormInput">
             <mat-label>Email Address</mat-label>
             <input matInput formControlName="email" />
@@ -46,8 +46,8 @@
               Your email does not look right.
             </mat-error>
           </mat-form-field>
-        </td>
-        <td>
+        </div>
+        <div class="col-md-6">
           <mat-form-field class="myFormInput">
             <mat-label>Phone Number</mat-label>
             <input
@@ -60,35 +60,38 @@
               * Required
             </mat-error>
           </mat-form-field>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
 
-    <section formGroupName="coreServices" class="checkBoxSection">
-      <mat-label>Which of our core services are you interested in?</mat-label
-      ><br />
-      <mat-checkbox formControlName="setup" class="checkInput"
-        >QuickBooks Online Setup</mat-checkbox
-      ><br />
-      <mat-checkbox formControlName="cleanup" class="checkInput"
-        >QuickBooks Online Cleanup</mat-checkbox
-      ><br />
-      <mat-checkbox formControlName="asNeeded" class="checkInput"
-        >As Needed Monthly Bookkeeping</mat-checkbox
-      ><br />
-      <mat-checkbox formControlName="fullService" class="checkInput"
-        >Full Service Monthly Bookkeeping</mat-checkbox
-      ><br />
-    </section>
+      <div class="row checkBoxSectionWrapper" formGroupName="coreServices">
+        <div class="col-sm-12">
+          <mat-label
+            >Which of our core services are you interested in?</mat-label
+          ><br />
+          <mat-checkbox formControlName="setup" class="checkInput"
+            ><span class="checkBoxDescrip">QuickBooks Online Setup</span></mat-checkbox
+          ><br />
+          <mat-checkbox formControlName="cleanup" class="checkInput"
+            ><span class="checkBoxDescrip">QuickBooks Online Cleanup</span></mat-checkbox
+          ><br />
+          <mat-checkbox formControlName="asNeeded" class="checkInput"
+            ><span class="checkBoxDescrip">As Needed Monthly Bookkeeping</span></mat-checkbox
+          ><br />
+          <mat-checkbox formControlName="fullService" class="checkInput"
+            ><span class="checkBoxDescrip">Full Service Monthly Bookkeeping</span></mat-checkbox
+          ><br />
+        </div>
+      </div>
+    </div>
 
-    <mat-form-field appearance="fill" id="textBox">
-      <mat-label>Optional Message</mat-label>
-      <textarea matInput formControlName="message"></textarea>
-    </mat-form-field>
+    <div id="textBoxWrapper" class="container-fluid">
+      <mat-form-field appearance="fill" id="textBox">
+        <mat-label>Optional Message</mat-label>
+        <textarea matInput formControlName="message"></textarea>
+      </mat-form-field>
+    </div>
     <div class="text-center">
-      <button class="btn btn-primary">
-        Submit
-      </button>
+      <button class="btn btn-primary">Submit</button>
     </div>
   </form>
 </div>

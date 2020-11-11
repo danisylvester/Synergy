@@ -1,31 +1,80 @@
 .bkgWrapper{
-  padding: 7% 4rem 6% 4rem;
+  padding: 45% 0rem 30% 0rem;
 }
 #textBox{
-  width: 98%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 .contactHeading{
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 .contactHeading h1{
   margin-bottom: 1.5rem;
+}
+.contactHeading h5{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .myFormInput {
   width: 95%;
 
 }
-table{
-  width: 100%;  
-}
 .checkInput{
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
   margin-top: 1rem;
 }
-.checkBoxSection{
+.checkBoxSectionWrapper{
   color: #555454;
   margin-top: 1rem;
+}
+.checkBoxDescrip{
+  white-space: normal;
+  
+}
+#textBoxWrapper{
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/*Large Phone View*/
+@media(min-width: 425px){ 
+  .bkgWrapper{
+    padding-top: 35%;
+    padding-bottom: 20%;
+  }
+}
+/*Tablet View*/
+@media(min-width: 768px){
+  .bkgWrapper{
+    padding-top: 20%;
+    padding-bottom: 15%;
+  }
+  .contactHeading h5{
+    margin-bottom: 1rem;
+  }
+  .checkInput{
+    margin-left: 0.5rem;
+  }
+}
+/*Laptop View*/
+@media(min-width: 1024px){
+  .bkgWrapper{
+    padding: 15% 2rem 10% 2rem;
+  }
+}
+/*Large Laptop*/
+@media(min-width: 1400px){
+  .bkgWrapper{
+    padding: 10% 4rem 5rem 4rem;
+  }
+  .contactHeading{
+    margin-bottom: 2rem;
+  }
+}
+/*XL Laptop*/
+@media(min-width: 2000px){
+  .bkgWrapper{
+    padding: 7% 0rem 5% 0rem;
+  }
 }

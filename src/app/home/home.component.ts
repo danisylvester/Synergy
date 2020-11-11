@@ -9,5 +9,7 @@ import { RouterLink } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-  ngOnInit(): void{}
+  ngOnInit(): void{
+    window.scrollTo(0, 0);
+  }
 }
