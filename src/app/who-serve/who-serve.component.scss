@@ -1,56 +1,94 @@
 .who-serve-home {
-    background-color: #eee;
-    padding: 2rem 1rem;
+  background-color: #eee;
+  padding: 2rem 0.25rem;
+}
+.who-serve-text {
+  margin-top: 1.5rem;
+}
+.who-serve-text p {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.who-serve-text h1 {
+  text-align: center;
+}
+.who-paragraph {
+  padding-top: 1.5rem;
+}
+.who-serve-img {
+  display: none;
+}
+.listClients li {
+  list-style: square;
+  list-style-position: outside;
+  margin-left: 3rem;
+}
+@media (min-width: 375px) {
+  .who-serve-text p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+@media (min-width: 420px) {
+  .who-serve-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 486px;
+  }
+  .who-serve-text h1 {
+    margin-top: 2rem;
+  }
+  .who-serve-home {
+    padding-bottom: 3rem;
+    padding-top: 3.5rem;
+  }
+  .listClients li {
+    list-style-position: inside;
+    margin-left: 2rem;
+  }
+}
+/*Who We Serve Medium*/
+@media (min-width: 600px) {
+  .who-serve-home {
+    padding: 10% 4rem;
   }
   .who-serve-text {
-    text-align: center;
-    margin-top: 1.5rem;
-  }
-  .who-paragraph {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
   .who-serve-img {
-    display: none;
+    max-width: 600px;
   }
-  
-  @media (min-width: 420px) {
-    .who-serve-img {
-      display: block;
-    }
+}
+/*Who We Serve Large*/
+@media (min-width: 1024px) {
+  .who-serve-home {
+    padding: 5rem;
   }
-  
-  /*Who We Serve Medium*/
-  @media (min-width: 600px) {
-    .who-serve-home {
-      padding: 10% 4rem;
-    }
-    .who-serve-text {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .who-paragraph {
-      margin: 2rem 0rem;
-    }
+  .who-serve-text {
+    text-align: left;
+    padding-left: 1rem;
   }
-  /*Who We Serve Large*/
-  @media (min-width: 992px) {
-    .who-serve-home {
-      padding: 5rem;
-    }
-    .who-serve-text {
-      text-align: left;
-    }
-    .who-serve-img {
-      margin-top: 3rem;
-    }
-    #who-img-size {
-      width: 85%;
-      display: block;
-    }
+  .who-serve-text p{
+    margin-left: 0;
   }
+  .who-serve-text h1 {
+    text-align: left;
+  }
+  .listClients li{
+    margin-left: 0rem;
+  }
+  .who-serve-img {
+    margin:auto;
+  }
+  #who-img-size {
+    width: 85%;
+    display: block;
+  }
+}
 
- @media (min-width: 1700px){
-   .who-serve-home{
-     padding: 5rem 10%;
-   }
- }
+@media (min-width: 1700px) {
+  .who-serve-home {
+    padding: 5rem 10%;
+  }
+}
