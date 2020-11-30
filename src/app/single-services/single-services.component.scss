@@ -1,5 +1,5 @@
 .single-services {
-    padding: 2rem 0.75rem;
+    padding: 2rem 0rem;
   }
   .single-services ul {
     padding-left: 1.5rem;
@@ -9,28 +9,47 @@
   }
   .service-text p {
     margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .service-heading {
     margin-top: 1rem;
-  }
+    text-align: left;
+    letter-spacing: 1px;
+    }
   .service-img {
     margin: 1rem 0rem;
   }
-  .listing p {
+  .listing li{
+    list-style: square;
+    list-style-position: outside;
+  }
+  .listing li p {
     margin: 0;
   }
   #tall-right-img {
     display: none;
   }
   .quote-btn{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
   }
   .service2{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
-
+  @media(min-width: 375px){
+    .single-services {
+      padding: 2rem 1rem;
+    }
+  }
+@media(min-width:500px){
+  .single-services {
+    padding: 2rem;
+  }
+  .quote-btn{
+    margin: 1rem 0.5rem;
+  }
+}
   /*Tablet view for Service Blocks*/
 @media (min-width: 768px) {
   .listing {
@@ -40,14 +59,16 @@
   .single-services {
     padding: 10% 4rem;
   }
+  .service-heading{
+    font-size: 37px;
+  }
 }
 
 /*Labtop view for Service Blocks*/
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .single-services {
-    padding: 3rem 5rem;
+    padding: 3rem;
   }
-
   #tall-right-img {
     display: block;
     margin: auto;

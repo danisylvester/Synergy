@@ -17,6 +17,9 @@
   width: 70%;
   border-radius: 50%;
 }
+.card-text {
+  text-align: left;
+}
 .additional-help {
   margin-top: 4rem;
   text-align: center;
@@ -34,6 +37,9 @@
 @media (min-width: 425px) {
   .card-img-top {
     width: 50%;
+  }
+  .card-text {
+    padding: 1rem;
   }
 }
 /*Medium-ish Services Home*/
@@ -58,20 +64,23 @@
   .home-services {
     text-align: left;
   }
+  .card-title{
+    text-align: center;
+  }
   .additional-help {
     margin-top: 4rem;
     font-size: large;
     text-align: left;
     font-size: x-large;
   }
+  .card {
+    height: 100%;
+  }
 }
 /*Large Services Home*/
 @media (min-width: 1024px) {
   .home-services {
     padding: 5rem;
-  }
-  .card {
-    height: 100%;
   }
   .additional-help {
     padding-top: 5rem;

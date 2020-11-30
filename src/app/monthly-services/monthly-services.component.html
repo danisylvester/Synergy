@@ -1,76 +1,114 @@
 <div class="container-fluid monthly-services" id="monthly">
-    <h2 class="text-center">Monthly Bookkeeping Services</h2>
-        
-    <div class="row"> <!--Start Cards-->
-         
-        <div class="col-lg-6 monthly-card">
-            <div class="card bg-light shadow">
-                <img class="card-img-top" src="/assets/images/bargraph.png" alt="computer image">
-                <div class="card-body monthly-card-body">
-                  <h4 class="card-title text-center">As Needed</h4>
-                  <p class="card-text">Stares at human while pushing stuff off a table licks your face for meeeeouw and chase laser. </p>
-                  <h6><em>General Ledger</em></h6>
-                  <ul>
-                      <li><i class="fa fa-check"> Reconcile bank accounts</i></li>
-                      <li><i class="fa fa-check"> Reconcile credit card accounts</i></li>
-                      <li><i class="fa fa-check"> Reconcile liabilities</i></li>
-                    </ul>
-                    <h6><em>Consulting</em></h6>
-                    <ul>
-                        <li><i class="fa fa-check"> Prepare monthly financial statements</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <a
-                    [routerLink]="'/contact'"
-                    [state]="{ subRoute: 'asNeeded' }" 
-                    class="btn btn-info"
-                    >Request a Quote</a>
-                </div>
-              </div>
-            </div>
-                
-            <div class="col-lg-6 monthly-card">
-              <div class="card bg-light shadow">
-                <img class="card-img-top" src="/assets/images/building.png" alt="computer image">
-                <div class="card-body monthly-card-body">
-                  <h4 class="card-title text-center">Full Service</h4>
-                  <p class="card-text">Stares at human while pushing stuff off a table licks your face for meeeeouw and chase laser. </p>
-                  <h6><em>General Ledger</em></h6>
-                  <ul>
-                      <li><i class="fa fa-check"> Reconcile bank accounts</i></li>
-                      <li><i class="fa fa-check"> Reconcile credit card accounts</i></li>
-                      <li><i class="fa fa-check"> Reconcile Liabilities</i></li>
-                    </ul>
-                    <h6><em>Accounts Payable</em></h6>
-                    <ul>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                    </ul>
-                    <h6><em>Accounts Receivable</em></h6>
-                    <ul>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                    </ul>
-                    <h6><em>Consulting</em></h6>
-                    <ul>
-                        <li><i class="fa fa-check"> Prepare monthly financial statements</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                        <li><i class="fa fa-check"> Seirnelsdi aldjfd</i></li>
-                        
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <a
-                    [routerLink]="'/contact'"
-                    [state]="{ subRoute: 'fullService' }" 
-                    class="btn btn-info"
-                    >Request a Quote</a>
-                </div>
-              </div>
-            </div>
-        </div>
-</div><!--End Monthly Services-->
+  <h2 class="text-center mainTitle">Monthly Bookkeeping Services</h2>
 
+  <div class="row">
+    <!--Start Cards-->
+
+    <div class="col-lg-6 monthly-card">
+      <div class="card bg-light shadow">
+        <img
+          class="card-img-top"
+          src="/assets/images/bargraph.png"
+          alt="computer image"
+        />
+        <div class="card-body monthly-card-body">
+          <h4 class="card-title text-center">As Needed</h4>
+          <p class="card-text">
+            Any of the Full Services but only on as needed basis.
+          </p>
+          <h6><em>General Ledger</em></h6>
+          <ul>
+            <li>
+              <i class="fa fa-check"> Categorize and Reconcile Bank Accounts</i>
+            </li>
+            <li>
+              <i class="fa fa-check">
+                Categorize and Reconcile Credit Card Accounts</i
+              >
+            </li>
+            <li><i class="fa fa-check"> Reconcile Assets & Liabilities</i></li>
+            <li>
+              <i class="fa fa-check">
+                Generate accurate Profit and Loss and Balance Sheet Reports</i
+              >
+            </li>
+          </ul>
+          <h6><em>Accounts Payables</em></h6>
+          <ul>
+            <li><i class="fa fa-check"> Enter/Pay bills</i></li>
+            <li><i class="fa fa-check"> A/P Aging</i></li>
+          </ul>
+          <h6><em>Accounts Receivables</em></h6>
+          <ul>
+            <li>
+              <i class="fa fa-check"> Enter Invoices/Receive payments </i>
+            </li>
+            <li><i class="fa fa-check"> A/R Aging</i></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a
+            [routerLink]="'/contact'"
+            [state]="{ subRoute: 'asNeeded' }"
+            class="btn btn-info"
+            >Request a Quote</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 monthly-card">
+      <div class="card bg-light shadow">
+        <img
+          class="card-img-top"
+          src="/assets/images/building.png"
+          alt="computer image"
+        />
+        <div class="card-body monthly-card-body">
+          <h4 class="card-title text-center">Full Service</h4>
+          <p class="card-text">
+            Full Service - We do it all for you..
+          </p>
+          <h6><em>General Ledger</em></h6>
+          <ul>
+            <li>
+              <i class="fa fa-check"> Categorize and Reconcile Bank Accounts</i>
+            </li>
+            <li>
+              <i class="fa fa-check">
+                Categorize and Reconcile Credit Card Accounts</i
+              >
+            </li>
+            <li><i class="fa fa-check"> Reconcile Assets & Liabilities</i></li>
+            <li>
+              <i class="fa fa-check">
+                Generate accurate Profit and Loss and Balance Sheet Reports</i
+              >
+            </li>
+          </ul>
+          <h6><em>Accounts Payables</em></h6>
+          <ul>
+            <li><i class="fa fa-check"> Enter/Pay bills</i></li>
+            <li><i class="fa fa-check"> A/P Aging</i></li>
+          </ul>
+          <h6><em>Accounts Receivables</em></h6>
+          <ul>
+            <li>
+              <i class="fa fa-check"> Enter Invoices/Receive payments </i>
+            </li>
+            <li><i class="fa fa-check"> A/R Aging</i></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a
+            [routerLink]="'/contact'"
+            [state]="{ subRoute: 'fullService' }"
+            class="btn btn-info"
+            >Request a Quote</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Monthly Services-->
