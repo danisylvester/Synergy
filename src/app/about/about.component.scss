@@ -1,107 +1,120 @@
-.about-background{
-    background-color: white;
-    padding-top: 5%;
-    padding-bottom: 4rem;
-    min-height: 100vh;
+.about-background {
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+.about-landing {
+  text-align: center;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+  color: #0f2f4e;
+  font-style: bold;
+  background-color: white;
+}
+#about-main {
+  background-color: white;
+}
+.about-description {
+  margin: 1rem 0rem;
+}
+.about-description h3 {
+  padding-bottom: 1rem;
+}
+#profile-pic {
+  width: 100%;
+}
+.qbo-logo {
+  margin: 2rem auto;
+  text-align: center;
+}
+#logo {
+  width: 120px;
+}
+.about-description h3 {
+  font-size: 25px;
+}
+#quote-section {
+  background-color: #19a2b8;
+  color: white;
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+#quote-section p {
+  font-size: 20px;
+}
+.call-btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+hr {
+  width: 75%;
+  margin: auto;
+}
+
+/*Large Mobile About Us*/
+@media (min-width: 375px) {
+  .about-landing {
+    padding-top: 6rem;
   }
-  .about-landing{
-    text-align: center;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
-    color: #0f2f4e;
-    font-style: bold;
-    background-color: white;
+}
+@media (min-width: 425px) {
+  .about-description h3 {
+    letter-spacing: 1px;
+    font-size: 28px;
   }
-  #about-main{
-    background-color: white;
+  .about-background{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
-  .about-description{
-    margin: 2rem 0rem;
-    text-align: center;
+}
+
+/*Tablet About Us*/
+@media (min-width: 768px) {
+  .about-background{
+    padding:4rem;
   }
-  .about-description h3{
-    padding-bottom: 1rem;
+  #about-main {
+    padding: 1rem 0rem;
+  }
+  .about-description {
+    text-align: left;
+    margin: 0rem;
+    padding-left: 1rem;
   }
   #profile-pic-wrapper{
-    padding: 1 rem;
+    text-align: center;
+  }
+  #profile-pic{
+    width: 80%;
+  }
+  #logo{
+    width: 151px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*Laptop About Us*/
+@media (min-width: 992px) {
+  #about-main {
+    padding: 1rem;
+  }
+  .about-background {
+    padding: 3rem;
+  }
+  .call-btn{
+    text-align: left;
   }
   #profile-pic{
     width: 100%;
   }
-  .qbo-bottom{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
+}
+@media(min-width:1200px){
+  #profile-pic{
+    width: 87%;
   }
-  .qbo-logo{
-    margin-bottom: 1rem;;
-  }
-
-  #quote-section{
-    background-color: #19A2B8;
-    color: white;
-    font-style: italic;
-    padding: 2rem;
-    text-align: center;
-  }
-  .call-btn{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  hr{
-    width: 75%;
-    margin: auto;
-  }
-
-  /*Large Mobile About Us*/
-  @media (min-width: 375px){
-    .about-landing{
-      padding-top: 6rem;
-  
-    }
-  }
-  
-  /*Tablet About Us*/
-  @media (min-width: 768px){
-    .about-landing{
-      padding-top: 6rem;
-    }
-    #about-main{
-      padding:1rem 0rem ;
-    }
-    .about-description{
-      text-align: left;
-      margin: 0rem;
-      padding-left: 1rem;
-    }
-    .qbo-wrapper{
-      margin-bottom: 2rem;
-      margin-top: 4rem;
-    }
-   
-    #profile-pic-wrapper{
-      text-align: center;
-    }
-    hr{
-      margin-top: 1rem;
-    }
-    .qbo-bottom{
-      text-align: left;
-    }
-  }
-  
-  /*Laptop About Us*/
-  @media (min-width: 1024px){
-    #about-main{
-      padding:1rem;
-    }
-    .about-background{
-      padding: 3rem;
-    }   
-    hr{
-      margin-top: 1.5rem;
-    }
-
-    
-  }
-  
+}

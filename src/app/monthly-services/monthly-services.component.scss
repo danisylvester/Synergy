@@ -16,7 +16,18 @@
   }
   .card li {
     list-style: none;
-    
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+  .listIcon{
+    display: inline;
+  }
+  .listItemText{
+    padding-left: 5px;
+    display: inline-block;
+  }
+  .card li i{
+    transform: translate(-15px);
   }
   .card-body ul {
     padding-inline-start: none;
