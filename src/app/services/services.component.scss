@@ -4,7 +4,7 @@
     padding: 0%;
   }
   .services-land-img {
-    background-image: url("/../assets/images/computer-meeting.jpg");
+    background-image: url("/../assets/images/computer-meeting-500.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,10 +45,18 @@
       width: 350px;
       text-align: center;
     }
+    .services-land-img {
+      background-image: url("/../assets/images/computer-meeting-1000.jpg");
+    }
   }
   @media (min-width: 1024px) {
     .services-landing {
       height: 60%;
+    }
+  }
+  @media(min-width: 1500px){
+    .services-land-img {
+      background-image: url("/../assets/images/computer-meeting-1500.jpg");
     }
   }
   

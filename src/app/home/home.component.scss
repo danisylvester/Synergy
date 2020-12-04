@@ -6,7 +6,7 @@
   }
   .home-wrap {
     position: absolute;
-    background-image: url("/../assets/images/hands-in-bkg.jpg");
+    background-image: url("/../assets/images/hands-in-bkg-750.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -51,6 +51,9 @@
       text-align: left;
       padding: 5% 2% 5% 5%;
     }
+    .home-wrap {
+      background-image: url("/../assets/images/hands-in-bkg-1000.jpg");
+    }
   }
 
   @media (min-width: 1024px){
@@ -58,3 +61,9 @@
       display: inline-block;
     }
   }
+
+@media(min-width: 1500px){
+  .home-wrap {
+    background-image: url("/../assets/images/hands-in-bkg-1500.jpg");
+  }
+}
