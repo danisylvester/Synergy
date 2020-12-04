@@ -43,8 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     MonthlyServicesComponent,
     AdditionalServicesComponent,
     PhoneMaskDirective,
-    NavColoredComponent
-    ],
+    NavColoredComponent    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,7 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatChipsModule
+    MatChipsModule,
+    HttpClientModule
   ],
   providers: [],
   exports: [

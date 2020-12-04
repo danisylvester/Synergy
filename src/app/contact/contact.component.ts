@@ -1,21 +1,23 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, NgControl, FormArray, FormControlName } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MailgunService } from '../mailgun.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  public submitted = false;
+  public authorizedEmail = 'maria.sylvester10@gmail.com';
   contactForm: FormGroup;
   constructor(private fb: FormBuilder,
               private route: ActivatedRoute,
-              private router: Router) {
+              private router: Router,
+              private mailgunService: MailgunService) {
     window.scrollTo(0, 0);
    }
-
-  public submitted = false;
   ngOnInit(): void {
     const requestQuoteFor = history.state.subRoute;
     console.log(requestQuoteFor);
@@ -72,6 +74,9 @@ export class ContactComponent implements OnInit {
   get lastName(): any{
     return this.contactForm.get('lastName');
   }
+  get companyName(): any{
+    return this.contactForm.get('companyName');
+  }
   get email(): any{
     return this.contactForm.get('email');
   }
@@ -103,8 +108,27 @@ export class ContactComponent implements OnInit {
   sendAnotherMsg(): void{
     this.submitted = false;
   }
-  onSubmit(): void{
-    console.warn(this.contactForm);
+  onSubmit(): void {
+    const subject = 'Message from: ' + this.firstName.value + ' ' + this.lastName.value;
+    const msg = 'Message from: ' + this.firstName.value + ' ' + this.lastName.value + '\n' +
+    'Company Name: ' + this.companyName.value + '\n' +
+    'Email; ' + this.email.value + '\n' +
+    'Phone Number: ' + this.phoneNumber.value + '\n' + '\n' +
+    'Service interest: ' + '\n' +
+    'QBO Setup- ' + this.contactForm.get('coreServices.setup').value + '\n' +
+    'QBO Cleanup- ' + this.contactForm.get('coreServices.cleanup').value + '\n' +
+    'Monthly As Needed- ' + this.contactForm.get('coreServices.asNeeded').value + '\n' +
+    'Monthly Full Service- ' + this.contactForm.get('coreServices.fullService').value + '\n' + '\n' +
+    'Optional Message: ' + this.message.value;
+    this.mailgunService.sendEmail(
+      this.authorizedEmail,
+      this.email.value,
+      subject,
+      msg).subscribe( res => {
+        console.log(res);
+      }, (error) => {
+        console.log(error);
+      });
   }
 
 }
