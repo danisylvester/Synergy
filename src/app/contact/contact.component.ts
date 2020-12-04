@@ -82,8 +82,10 @@ export class ContactComponent implements OnInit {
     return this.contactForm.get('message');
   }
   popUpConfirmation(): void{
-    const contactModal = document.getElementById('myModal');
-    contactModal.style.display = 'block';
+    if (this.contactForm.valid){
+      const contactModal = document.getElementById('myModal');
+      contactModal.style.display = 'block';
+    }
   }
   closeModalBtn(): void{
     const contactModal = document.getElementById('myModal');

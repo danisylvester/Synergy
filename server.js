@@ -21,4 +21,16 @@ app.all("/*", function(req, res, next){
     next();
   });
 
-  console.log('Server is running on port...' + 8080)
+  app.post('/hello',function(request,response){
+    var mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
+    console.log(request.body)
+    const data = {
+        from: request.body.from,
+        to: request.body.to,
+        subject: request.body.subject,
+        text: request.body.message
+      };
+      mailgun.messages().send(data, (error, body) => {
+        response.send('Message was sent successfully!');
+      })
+})

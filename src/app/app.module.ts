@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhoneMaskDirective } from './phone-mask.directive';
 import { NavColoredComponent } from './nav-colored/nav-colored.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { RouterModule } from '@angular/router';
     AdditionalServicesComponent,
     PhoneMaskDirective,
     NavColoredComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
