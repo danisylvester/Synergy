@@ -3,6 +3,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 
+var DOMAIN = process.env.MAILGUN_DOMAIN;
+var API_KEY = process.env.MAILGUN_API_KEY;
+
 app.use(express.static(__dirname + '/dist/Synergy'));
 
 app.get('/*',function(req,res){
@@ -34,3 +37,4 @@ app.all("/*", function(req, res, next){
         response.send('Message was sent successfully!');
       })
 })
+console.log('running');
