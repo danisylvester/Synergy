@@ -47,10 +47,7 @@
   .home-services {
     padding: 10% 4rem;
   }
-  .card {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+
   .additional-help {
     margin-top: 5rem;
     font-size: x-large;
@@ -61,31 +58,27 @@
 }
 /*Tablet Services Home*/
 @media (min-width: 992px) {
-  .home-services {
-    text-align: left;
-  }
   .card-title{
     text-align: center;
   }
   .additional-help {
     margin-top: 4rem;
     font-size: large;
-    text-align: left;
+    text-align: center;
     font-size: x-large;
   }
   .card {
-    height: 100%;
+    height: 95%;
+    width: 95%;
+  }
+  .row{
+    justify-content: center;
   }
 }
 /*Large Services Home*/
 @media (min-width: 1024px) {
   .home-services {
     padding: 5rem;
-  }
-  .additional-help {
-    padding-top: 5rem;
-    text-align: center;
-    font-size: x-large;
   }
   .card-img-top {
     height: 200px;
