@@ -1,0 +1,74 @@
+#training {
+    padding: 2rem 0.75rem;
+  }
+  .service-text {
+    margin-top: 1rem;   
+}
+  #training p {
+    margin-top: 1.5rem;
+  }
+  .service-heading {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+  } 
+  .discoverBtn{
+      text-align: center;
+      margin-top: 2rem;
+  } 
+  .trainImg{
+      max-height: 478px;
+      width: auto;
+  }
+  .textSubHead{
+      text-align: center;
+  }
+  @media(min-width: 550px){
+      #training {
+        padding: 3rem;
+      }
+  }
+  @media (min-width: 768px) {
+    .listing {
+      float: left;
+      padding-left: 30%;
+    }
+    #training {
+      padding: 10% 7em 2rem 7rem;
+    }
+  }
+  
+  /*Labtop view for Service Blocks*/
+  @media (min-width: 992px) {
+    #training {
+      padding: 3rem 5rem;
+    }
+    .trainImg {
+      margin-top: 2.25rem;
+      max-height: 568px;
+    }
+    .service-text {
+      font-size: 1rem;
+    }
+    .service-heading{
+       text-align: left;
+    }
+    .discoverBtn{
+        text-align: left;
+    }
+  }
+  
+  /*Large Laptop*/
+  @media (min-width: 1440px) {
+    #training {
+      padding: 3rem 12%;
+    }
+  }
+  
+  /*Larget Laptop*/
+  @media (min-width: 1800px) {
+    #training {
+      padding: 4rem 15%;
+    }
+  }
+  

@@ -27,6 +27,7 @@ import { PhoneMaskDirective } from './phone-mask.directive';
 import { NavColoredComponent } from './nav-colored/nav-colored.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { TrainingServiceComponent } from './training-service/training-service.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     MonthlyServicesComponent,
     AdditionalServicesComponent,
     PhoneMaskDirective,
-    NavColoredComponent    ],
+    NavColoredComponent,
+    TrainingServiceComponent    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

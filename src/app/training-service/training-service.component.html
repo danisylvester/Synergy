@@ -1,0 +1,38 @@
+<div class="container-fluid" id="training">
+  <div class="row">
+    <div class="col-lg-6 text-center">
+        <div class="imageWrapper">
+            <img
+            class="img-fluid shadow trainImg"
+            src="/assets/images/woman-on-phone-500.jpg"
+            srcset="
+            /assets/images/woman-on-phone-500.jpg  500w,
+            /assets/images/woman-on-phone-1000.jpg 768w
+            "
+            alt="Clients Photo"
+            />
+        </div>
+    </div>
+    <div class="col-lg-6 lead service-text">
+      <h2 class="service-heading">Training & Support</h2>
+      <p>
+        Monthly Support Starting at $60/month<br /><br>
+        Perfect for business owners who are just getting started, who prefer to
+        be hands-on or DIY, or just simply want the guidance and support of a
+        trusted Quickbooks ProAdvisor at your convenience.<br /><br>
+        For $60 a month you will receive unlimited email support for all your
+        questions/concerns, 2 calls a month. Schedule a free consultation for
+        more information.<br><br>
+        <strong>Additional phone calls / video calls starting at $25/hour</strong>
+      </p>
+      <div class="discoverBtn">
+          <a
+          [routerLink]="'/contact'"
+          [state]="{ subRoute: 'fullService' }"
+          class="btn btn-info"
+          >Book a Discovery Call</a
+          >
+        </div>
+    </div>
+  </div>
+</div>
