@@ -1,6 +1,7 @@
 .navbar {
     background-color: transparent;
     transition: background-color 500ms linear;
+    padding-top: 1%;
   }
   .navbar.scrolled {
     background-color: #0f2f4e !important;
@@ -34,6 +35,13 @@
   .mobile-serve {
     display: none;
   }
+  #logo{
+    width: 120px;
+  }
+  .navbar-brand{
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 
   @media (max-width: 767px) {
     .navbar {
@@ -58,6 +66,14 @@
     .nav-item {
       margin-top: 0.5rem;
       margin-bottom: 0.75rem;
+    }
+  }
+  @media(min-width: 992px){
+    #logo{
+      width: 135px;
+    }
+    .navbar{
+      padding-top: 5px;
     }
   }
   

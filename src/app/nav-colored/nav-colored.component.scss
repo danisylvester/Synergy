@@ -1,6 +1,7 @@
 .navbar {
     background-color: #0f2f4e;
     opacity: 0.9;
+    padding-top: 1%;
   }
 
   .nav-right {
@@ -30,7 +31,9 @@
   .mobile-serve {
     display: none;
   }
-  
+  #logo{
+    width: 120px;
+  }
   /*Nav mobile animations*/
   @media (max-width: 767px) {
     .navbar {
@@ -55,5 +58,13 @@
     .nav-item {
       margin-top: 0.5rem;
       margin-bottom: 0.75rem;
+    }
+  }
+  @media(min-width: 992px){
+    #logo{
+      width: 135px;
+    }
+    .navbar{
+      padding-top: 5px;
     }
   }
