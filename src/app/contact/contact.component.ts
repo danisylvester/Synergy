@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
     let cleanUpSelected = false;
     let asNeededSelected = false;
     let fullServiceSelected = false;
+    let trainingSelected = false;
 
     switch (requestQuoteFor){
       case 'setup':
@@ -38,6 +39,9 @@ export class ContactComponent implements OnInit {
         break;
       case 'fullService':
         fullServiceSelected = true;
+        break;
+      case 'training':
+        trainingSelected = true;
         break;
       default:
         break;
@@ -62,7 +66,8 @@ export class ContactComponent implements OnInit {
         setup: setUpSelected,
         cleanup: cleanUpSelected,
         asNeeded: asNeededSelected,
-        fullService: fullServiceSelected
+        fullService: fullServiceSelected,
+        training: trainingSelected
       }),
       message: null
     });
@@ -118,7 +123,8 @@ export class ContactComponent implements OnInit {
     'QBO Setup- ' + this.contactForm.get('coreServices.setup').value + '\n' +
     'QBO Cleanup- ' + this.contactForm.get('coreServices.cleanup').value + '\n' +
     'Monthly As Needed- ' + this.contactForm.get('coreServices.asNeeded').value + '\n' +
-    'Monthly Full Service- ' + this.contactForm.get('coreServices.fullService').value + '\n' + '\n' +
+    'Monthly Full Service- ' + this.contactForm.get('coreServices.fullService').value + '\n' +
+    'Training & Support- '+ this.contactForm.get('coreServices.training').value + '\n' +
     'Optional Message: ' + this.message.value;
     this.mailgunService.sendEmail(
       this.authorizedEmail,

@@ -48,6 +48,11 @@ export class ServicesComponent implements OnInit {
           scrollToOffset('additional');
         }, 500);
         break;
+      case 'training':
+        setTimeout(() => {
+          scrollToOffset('training');
+        }, 500);
+        break;
       default:
         window.scrollTo(0, 0);
         break;
