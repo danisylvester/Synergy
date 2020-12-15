@@ -1,9 +1,6 @@
 .single-services {
   padding: 2rem 0.75rem;
 }
-.single-services ul {
-  padding-left: 1.5rem;
-}
 .service-text {
   margin-top: 1rem;
 }
@@ -14,53 +11,57 @@
   margin-top: 1rem;
   letter-spacing: 1px;
 }
-
-.listing p {
-  margin: 0;
+.leftSide{
+  text-align: center;
 }
+#circle5{
+  animation: rotating 9s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  }
+#circle1{
+  animation: rotatingBack 11s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  }
 
+  @keyframes rotating {
+    from{
+      transform: rotateZ(0deg);
+    }
+    to{
+      transform: rotateZ(360deg);
+    }
+  }
+  @keyframes rotatingBack {
+    from{
+      transform: rotateZ(360deg);
+    }
+    to{
+      transform: rotateZ(0deg);
+    }
+  }
 /*Tablet view for Service Blocks*/
 @media (min-width: 768px) {
-  .listing {
-    float: left;
-    padding-left: 30%;
-  }
   .single-services {
-    padding: 10% 4rem;
-  }
-
-  #stepping-img {
-    width: 80%;
+    padding: 3rem 1rem 5rem 1rem;
   }
 }
 
 /*Labtop view for Service Blocks*/
 @media (min-width: 992px) {
   .single-services {
-    padding: 3rem 5rem;
-  }
-  #stepping-img {
-    width: 100%;
-    margin-top: 2.25rem;
+    padding: 2rem 4rem 4rem 4rem;
   }
   .service-text {
     font-size: 1rem;
-  }
-  #stepping-img {
-    max-width: 620px;
   }
 }
 
 /*Large Laptop*/
 @media (min-width: 1440px) {
   .single-services {
-    padding: 3rem 12%;
+    padding: 1rem 13% 4rem 13%;
   }
 }
 
-/*Larget Laptop*/
-@media (min-width: 1800px) {
-  .single-services {
-    padding: 4rem 15%;
-  }
-}
