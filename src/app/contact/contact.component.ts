@@ -122,7 +122,7 @@ export class ContactComponent implements OnInit {
     'Service interest: ' + '\n' +
     'QBO Setup- ' + this.contactForm.get('coreServices.setup').value + '\n' +
     'QBO Cleanup- ' + this.contactForm.get('coreServices.cleanup').value + '\n' +
-    'Monthly As Needed- ' + this.contactForm.get('coreServices.asNeeded').value + '\n' +
+    'Monthly Do-It-Yourself- ' + this.contactForm.get('coreServices.asNeeded').value + '\n' +
     'Monthly Full Service- ' + this.contactForm.get('coreServices.fullService').value + '\n' +
     'Training & Support- '+ this.contactForm.get('coreServices.training').value + '\n' +
     'Optional Message: ' + this.message.value;
