@@ -29,12 +29,16 @@
   i{
     margin-right: 0.5rem;
   }
+  #logo{
+    width:175px;
+  }
   
   /*Footer Medium*/
   @media (min-width: 768px) {
     .footer-item {
       text-align: left;
       margin: 0%;
+      padding-left:1rem;
     }
     .logo-wrapper {
       text-align: center;
@@ -44,6 +48,26 @@
     #footer-copyright {
       text-align: right;
     }
+    #logo{
+      width:125px;
+    }
+    .text{
+      font-size: 13px;
+    }
   }
-  
-  /*End Footer*/
+  @media(min-width:900px){
+    #logo{
+      width:150px;
+    }
+    .text{
+      font-size: 17px;
+    }
+    .middleWrapper{
+      padding-top: 0.5rem;
+    }
+  }
+  @media(min-width: 1200px){
+  .footer-item{
+    padding-left: 0%;
+  }
+}
